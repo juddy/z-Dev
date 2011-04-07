@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# OS Selector/Booter
+/opt/s390/utils/zselector.sh &
+

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- For kiwi 4.80-8.1 and above -->
+<image name='zDev_11.4' displayname='zDev_11.4' schemeversion='2.4'>
+  <description type='system'>
+    <author>itomato</author>
+    <contact>studio-devel@suse.de</contact>
+    <specification>Graphical system + IceWM</specification>
+  </description>
+  <preferences>
+    <type format='vmdk' filesystem='ext3' primary='true' checkprebuilt='true' fsnocheck='true' boot='vmxboot/suse-11.4'>vmx</type>
+    <version>0.1.10</version>
+    <packagemanager>zypper</packagemanager>
+    <rpm-check-signatures>False</rpm-check-signatures>
+    <rpm-force>False</rpm-force>
+    <size additive='false' unit='M'>16384</size>
+  </preferences>
+  <users group='root'>
+    <user name='root' shell='/bin/bash' pwd='$1$zbJAERsK$KaTitlEvItU8Ye.pAWEBE0' home='/root'/>
+  </users>
+  <users group='users'>
+    <user name='zdev' shell='/bin/bash' pwd='$1$CTPuRKPm$GP6J2HVnN3soOmF5yy5vz/' home='/home/zdev'/>
+  </users>
+  <vmwareconfig memory='4096' arch='ix86' usb='true' guestOS='suse'>
+    <vmwaredisk id='0' controller='scsi'/>
+    <vmwarecdrom id='0' controller='ide'/>
+    <vmwarenic mode='bridged' interface='0' driver='e1000'/>
+  </vmwareconfig>
+  <packages patternType='onlyRequired' type='image' patternPackageType='onlyRequired'>
+    <opensusePattern name='yast2_install_wf'/>
+    <opensusePattern name='yast2_basis'/>
+    <opensusePattern name='console'/>
+    <opensusePattern name='x11'/>
+    <opensusePattern name='base'/>
+    <package name='man-pages'/>
+    <package name='man'/>
+    <package name='sysvinit'/>
+    <package name='ConsoleKit-x11'/>
+    <package name='xorg-x11-fonts'/>
+    <package name='xorg-x11-driver-video'/>
+    <package name='xpdf-poppler'/>
+    <package name='yast2-ncurses-pkg'/>
+    <package name='xorg-x11-server-extra'/>
+    <package name='xorg-x11-driver-input'/>
+    <package name='dialog'/>
+    <package name='telnet'/>
+    <package name='vsftpd'/>
+    <package name='MozillaFirefox'/>
+    <package name='x3270'/>
+    <package name='minicom'/>
+    <package name='terminus-font'/>
+    <package name='links'/>
+    <package name='yast2-vm'/>
+    <package name='netconsole-tools'/>
+    <package name='misc-console-font'/>
+    <package name='yast2-gtk'/>
+    <package name='yast2-sysconfig'/>
+    <package name='yast2-online-update'/>
+    <package name='root-tail'/>
+    <package name='yast2-live-installer'/>
+    <package name='hercules'/>
+    <package name='openmotif-libs'/>
+    <package name='openmotif'/>
+    <package name='icewm-lite'/>
+    <package name='icewm'/>
+    <package name='dbus-1-x11'/>
+    <package name='x11-tools'/>
+    <package name='xorg-x11-server'/>
+    <package name='yast2-firstboot'/>
+    <package name='mdadm'/>
+    <package name='yast2-ncurses'/>
+    <package name='yast2'/>
+    <package name='less'/>
+    <package name='vim'/>
+    <package name='zypper'/>
+    <package name='SuSEfirewall2'/>
+    <package name='sax2-tools'/>
+    <package name='xorg-x11-driver-video-unichrome'/>
+    <package name='libgcc45'/>
+    <package name='glib2-branding-openSUSE'/>
+    <package name='kernel-xen'/>
+    <package name='xen'/>
+    <package name='xen-tools'/>
+  </packages>
+  <packages type='bootstrap'>
+    <package name='filesystem'/>
+    <package name='glibc-locale'/>
+  </packages>
+  <repository type='rpm-md'>
+    <source path='{itomato openSUSE 11.1}'/>
+  </repository>
+  <repository type='rpm-md'>
+    <source path='{itomato openSUSE 11.2}'/>
+  </repository>
+  <repository type='rpm-md'>
+    <source path='http://download.opensuse.org/update/11.4'/>
+  </repository>
+  <repository type='yast2'>
+    <source path='http://download.opensuse.org/distribution/11.4/repo/oss'/>
+  </repository>
+</image>

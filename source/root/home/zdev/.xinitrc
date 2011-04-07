@@ -1,0 +1,4 @@
+
+xterm&
+hercules&
+mwm

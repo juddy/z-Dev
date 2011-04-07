@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=d85eceb1268e81e592eb914132719256
+Comment=OS Selector/Booter
+Exec=/opt/s390/utils/zselector.sh
+Terminal=false
+Type=Application

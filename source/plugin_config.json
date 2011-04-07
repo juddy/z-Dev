@@ -1,0 +1,1 @@
+{"config":{"memory":{"size":4096,"pae_enabled":true},"vmx_cdrom":{"enabled":true},"sdk_integration":{"enabled":false,"sdk_server":"clayton.arch.suse.de:3000"},"disk":{"disk_size":16,"swap_size":512},"live_installer":{"enabled":true},"xen_host_mode":{"enabled":true}},"disabled_plugins":["pum_agent","slm_source"]}
